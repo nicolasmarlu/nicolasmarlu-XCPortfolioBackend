@@ -4,6 +4,7 @@ import cors from 'cors';
 import experienceRoutes from './routes/experience.route';
 import projectsRoutes from './routes/projects.routes';
 import contactRoutes from './routes/contacts.routes';
+import socialRoutes from './routes/social.routes';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 
@@ -19,6 +20,7 @@ app.use(cors({
 app.use(express.json());
 app.use('/api/experience', experienceRoutes);
 app.use('/api/projects', projectsRoutes);
+app.use('/api/social', socialRoutes);
 app.use(helmet());
 
 const contactLimiter = rateLimit({
