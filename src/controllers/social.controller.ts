@@ -1,12 +1,14 @@
 import { Request, Response } from 'express';
 
-import { socialmedia } from '../data/social';
+import { socialMediaEN, socialMediaES } from '../data/social';
 
 export const getSocialMedia = (
   req: Request,
   res: Response
 ) => {
 
-  res.json(socialmedia);
+  const language = req.headers['accept-language'];
 
+  if (language === 'en') res.json(socialMediaEN);
+  else res.json(socialMediaES);
 };
