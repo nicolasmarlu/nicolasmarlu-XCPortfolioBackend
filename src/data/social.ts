@@ -20,7 +20,7 @@ export const socialMediaES = [
     {
       label: 'LinkedIn',
       value: 'linkedin.com/in/nicolasmarlu',
-      link: 'https://github.com/nicolasmarlu',
+      link: 'https://linkedin.com/in/nicolasmarlu',
       description: 'For professional opportunities, technical collaboration or projects.',
     },
     {
