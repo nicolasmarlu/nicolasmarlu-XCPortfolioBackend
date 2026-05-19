@@ -14,7 +14,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:4200',
-    'https://xc-portfolio-git-develop-nicolasmarluprojects.vercel.app'
+    'https://xc-portfolio-git-develop-nicolasmarluprojects.vercel.app',
+    'https://xc-portfolio-fsdhwuovh-nicolasmarluprojects.vercel.app'
   ]
 }));
 
