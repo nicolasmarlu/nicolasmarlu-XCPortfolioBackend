@@ -11,14 +11,17 @@ import helmet from 'helmet';
 
 const app = express();
 
-app.use(cors({
-  origin: [
-    'http://localhost:4200',
-    'https://xc-portfolio-git-develop-nicolasmarluprojects.vercel.app',
-    'https://xc-portfolio-fsdhwuovh-nicolasmarluprojects.vercel.app',
-    'https://xc-portfolio-blush.vercel.app/',
-  ]
-}));
+// app.use(cors({
+//   origin: [
+//     'http://localhost:4200',
+//     'https://xc-portfolio-git-develop-nicolasmarluprojects.vercel.app',
+//     'https://xc-portfolio-fsdhwuovh-nicolasmarluprojects.vercel.app',
+//     'https://xc-portfolio-blush.vercel.app/',
+//     'https://xcportfolio-api.onrender.com'
+//   ]
+// }));
+
+app.use(cors());
 
 app.use(express.json());
 app.use('/api/experience', experienceRoutes);
