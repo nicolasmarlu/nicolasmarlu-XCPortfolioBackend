@@ -14,7 +14,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:4200',
-    'https://tudominio.com'
+    'https://xc-portfolio-fsdhuvuh-nicolasmarluprojects.vercel.app'
   ]
 }));
 
